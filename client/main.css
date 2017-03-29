@@ -1,0 +1,49 @@
+body{
+  font-family: helvetica;
+  font-size: 18px;
+  padding: 20px;
+}
+
+table{
+  margin: 1px solid black;
+  padding: 5px;
+  word-spacing: 50px;
+  
+}
+
+th{
+  border: 1px solid black;
+  padding: 25px;
+}
+#lun{
+  color: lightblue;
+} 
+
+#mar{
+  color: lightblue;
+}
+
+#mer{
+  color: lightblue;
+}
+#jeu{
+  color: lightblue;
+}
+
+#ven{
+  color: lightblue;
+}
+
+#sam{
+  color: lightblue;
+}
+
+#dim{
+  color: lightblue;
+}
+
+#dispo{
+  font-family: helvetica;
+  font-size: 40px;
+  color: darkorange;
+}/* CSS declarations go here */
