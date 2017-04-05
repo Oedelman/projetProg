@@ -36,3 +36,7 @@
 .meteor/packages
 
 .meteor/platforms
+
+.meteor/packages
+
+node_modules/regenerator-runtime/package.json

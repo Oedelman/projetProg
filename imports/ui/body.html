@@ -1,11 +1,18 @@
 <body>
   <div class="container">
     <header>
-      <h1>Projet</h1>
-      {{> loginButtons}}
-    </header>
       {{#if currentUser}}
         <!--L'utlisateur doit être connecté pour voir ce qui suit-->
+        <h1>Profil de {{currentUser.username}}</h1>
+      {{else}}
+        <!--si non connecté-->
+        <h1>Bienvenue sur Byberoux!</h1>
+      {{/if}}
+        <!--permanent sur la page-->
+        {{> loginButtons}}
+    </header>
+      {{#if currentUser}}
+        <!--Naviguation de l'utilisateur-->
         {{#if isPage 'home'}}
           <button class="clickChangesPage" data-page='cal'>Calendrier</button>
         {{/if}}
@@ -14,9 +21,19 @@
           {{> calendrier}}
         {{/if}}
       {{else}}
-        <!--si non connecté-->
-        Bonjour, bienvenue sur ProjetProg!
+        {{#if isPage 'home'}}
+          Pourcommencer : A quelle catégorie appartenez-vous?
+          <button class="clickChangesPage" data-page='Qparents'>Parent</button>
+          <button class="clickChangesPage" data-page='Qbabysitter'>Babysitter</button>
+        {{/if}}
+        {{#if isPage 'Qparents'}}
+          <button class="clickChangesPage" data-page='home'>Retour</button>
+          questionnaire parent
+        {{/if}}
+        {{#if isPage 'Qbabysitter'}}
+          <button class="clickChangesPage" data-page='home'>Retour</button>
+          questionnaire babysitter
+        {{/if}}
       {{/if}}
-        <!--permanent sur la page-->
   </div>
 </body>
