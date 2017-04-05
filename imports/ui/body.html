@@ -6,11 +6,17 @@
     </header>
       {{#if currentUser}}
         <!--L'utlisateur doit être connecté pour voir ce qui suit-->
-        {{> calendrier}}
+        {{#if isPage 'home'}}
+          <button class="clickChangesPage" data-page='cal'>Calendrier</button>
+        {{/if}}
+        {{#if isPage 'cal'}}
+          <button class="clickChangesPage" data-page='home'>Home</button>
+          {{> calendrier}}
+        {{/if}}
       {{else}}
         <!--si non connecté-->
-        Bonjour
-        <!--fin des arguments-->
+        Bonjour, bienvenue sur ProjetProg!
       {{/if}}
+        <!--permanent sur la page-->
   </div>
 </body>
