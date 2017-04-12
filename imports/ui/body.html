@@ -4,12 +4,13 @@
       {{#if currentUser}}
         <!--L'utlisateur doit être connecté pour voir ce qui suit-->
         <h1>Profil de {{currentUser.username}}</h1>
+        {{> dashboard}}
       {{else}}
         <!--si non connecté-->
         <h1>Bienvenue sur Byberoux!</h1>
+        {{> login}}
       {{/if}}
         <!--permanent sur la page-->
-        {{> loginButtons}}
     </header>
       {{#if currentUser}}
         <!--Naviguation de l'utilisateur-->
@@ -25,6 +26,7 @@
           Pourcommencer : A quelle catégorie appartenez-vous?
           <button class="clickChangesPage" data-page='Qparents'>Parent</button>
           <button class="clickChangesPage" data-page='Qbabysitter'>Babysitter</button>
+          {{> register}}
         {{/if}}
         {{#if isPage 'Qparents'}}
           <button class="clickChangesPage" data-page='home'>Retour</button>

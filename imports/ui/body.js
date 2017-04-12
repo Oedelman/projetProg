@@ -4,7 +4,9 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 
 import './body.html';
 import './calendrier.html';
+import './login.js';
 
+//Permet la navigation sans changement de lien
 if(Meteor.isClient){
 
     Session.setDefault('page', 'home');
