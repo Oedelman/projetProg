@@ -6,7 +6,7 @@ import  './body.css';
 
 Template.stuff.helpers({
 	emails: [
-		{ text: 'captainkris@pirate.ocean'},
+		{},
 	],
 });
 
