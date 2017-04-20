@@ -1,0 +1,44 @@
+/* CSS declarations go here */
+body {
+  background-color: seagreen;
+}
+.maindiv {
+  display: flex;
+}
+.leftcolumn {
+  width: 33%;
+  float: left;
+  margin: 20px;
+}
+.rightcolumn {
+  width: 66%;
+}
+.boxes  {
+    margin: 50px auto;
+  border: 0 none;
+  border-radius: 20px;
+  font-size: 180%;
+  background: white;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  text-align: center;
+   box-sizing: border-box;
+}
+#cvspace {
+  height: 500px;
+}
+#checkboxes {
+  text-align: left;}
+.profileforms {
+  border: 0 none;
+  border-radius: 20px;
+  font-size: 180%;
+  background: white;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  text-align: center;
+   box-sizing: border-box;
+  float: left;
+  width: 27%;
+  height: 40px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  }
