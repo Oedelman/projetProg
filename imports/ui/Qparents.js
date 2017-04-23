@@ -103,6 +103,7 @@ Template.Qparents.events({
 Template.Qparents.events({
     'submit form': function(event) {
         event.preventDefault();
+        Session.set('page', 'home');
         var usernameVar = event.target.nom.value+" "+event.target.prenom.value;
         var emailVar = event.target.email.value;
         var passwordVar = event.target.pass.value;
@@ -110,6 +111,7 @@ Template.Qparents.events({
         var firstNameVar = event.target.prenom.value;
         var codePostVar = event.target.codePostal.value;
         var numTelVar = event.target.phoneNumber.value;
+        var addressVar = event.target.address.value;
         Accounts.createUser({
             username: usernameVar,
             email: emailVar,
@@ -118,7 +120,8 @@ Template.Qparents.events({
             	first_name: firstNameVar,
             	last_name: nameVar,
             	postalCode: codePostVar,
-            	phone: numTelVar
+            	phone: numTelVar,
+            	address: addressVar
 			},
         });
     }

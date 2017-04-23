@@ -8,6 +8,7 @@ import './calendrier.html';
 import './login.js';
 import './userInfo.js';
 import  './Qparents.js';
+import './profil.html';
 
 //Permet la navigation sans changement de lien
 if(Meteor.isClient){

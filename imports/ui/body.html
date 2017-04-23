@@ -4,7 +4,6 @@
       {{#if currentUser}}
         <!--L'utlisateur doit être connecté pour voir ce qui suit-->
         <h1>Profil de {{currentUser.username}}</h1>
-        {{> mail}}
         {{> dashboard}}
       {{else}}
         <!--si non connecté-->
@@ -17,10 +16,17 @@
         <!--Naviguation de l'utilisateur-->
         {{#if isPage 'home'}}
           <button class="clickChangesPage" data-page='cal'>Calendrier</button>
+          <button class="clickChangesPage" data-page='profil'>Profil</button>
         {{/if}}
         {{#if isPage 'cal'}}
           <button class="clickChangesPage" data-page='home'>Home</button>
+          <button class="clickChangesPage" data-page='profil'>Profil</button>
           {{> calendrier}}
+        {{/if}}
+        {{#if isPage 'profil'}}
+          <button class="clickChangesPage" data-page='home'>Home</button>
+          <button class="clickChangesPage" data-page='cal'>Calendrier</button>
+          {{> profil}}
         {{/if}}
       {{else}}
         {{#if isPage 'home'}}
