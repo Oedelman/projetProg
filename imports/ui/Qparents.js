@@ -1,17 +1,15 @@
-import {Template} from 'meteor/templating';
-
-import  './body.html';
-import  './body.css';
+import  './Qparents.html';
+import  './Qparents.css';
 
 
-Template.stuff.helpers({
+Template.Qparents.helpers({
 	emails: [
 		{},
 	],
 });
 
 //script pour passer à la prochaine question
-Template.stuff.events({
+Template.Qparents.events({
 'click .next' (event) {
 	
 var current_fs, next_fs, previous_fs; //fieldsets
@@ -59,7 +57,7 @@ $(".next").click(function(){
 
 
 //script pour retourner à la question précédente
-Template.stuff.events({
+Template.Qparents.events({
 	'click .previous' (event) {
 		var current_fs, next_fs, previous_fs; //fieldsets
 		var left, opacity, scale; //fieldset properties which we will animate
@@ -97,11 +95,32 @@ Template.stuff.events({
 		}, 
 
 	});
-});
-
-$(".submit").click(function(){
-	return false;
-})
+	});
 
 	}
 });
+
+Template.Qparents.events({
+    'submit form': function(event) {
+        event.preventDefault();
+        var usernameVar = event.target.nom.value+" "+event.target.prenom.value;
+        var emailVar = event.target.email.value;
+        var passwordVar = event.target.pass.value;
+        var nameVar = event.target.nom.value;
+        var firstNameVar = event.target.prenom.value;
+        var codePostVar = event.target.codePostal.value;
+        var numTelVar = event.target.phoneNumber.value;
+        Accounts.createUser({
+            username: usernameVar,
+            email: emailVar,
+            password: passwordVar,
+            profile: {
+            	first_name: firstNameVar,
+            	last_name: nameVar,
+            	postalCode: codePostVar,
+            	phone: numTelVar
+			},
+        });
+    }
+});
+

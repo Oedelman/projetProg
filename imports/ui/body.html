@@ -4,6 +4,7 @@
       {{#if currentUser}}
         <!--L'utlisateur doit être connecté pour voir ce qui suit-->
         <h1>Profil de {{currentUser.username}}</h1>
+        {{> mail}}
         {{> dashboard}}
       {{else}}
         <!--si non connecté-->
@@ -26,11 +27,10 @@
           Pourcommencer : A quelle catégorie appartenez-vous?
           <button class="clickChangesPage" data-page='Qparents'>Parent</button>
           <button class="clickChangesPage" data-page='Qbabysitter'>Babysitter</button>
-          {{> register}}
         {{/if}}
         {{#if isPage 'Qparents'}}
+          {{> Qparents}}
           <button class="clickChangesPage" data-page='home'>Retour</button>
-          questionnaire parent
         {{/if}}
         {{#if isPage 'Qbabysitter'}}
           <button class="clickChangesPage" data-page='home'>Retour</button>

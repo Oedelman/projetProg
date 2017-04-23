@@ -4,7 +4,10 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 
 import './body.html';
 import './calendrier.html';
+//import './register.js';
 import './login.js';
+import './userInfo.js';
+import  './Qparents.js';
 
 //Permet la navigation sans changement de lien
 if(Meteor.isClient){
