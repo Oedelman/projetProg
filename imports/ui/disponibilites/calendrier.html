@@ -1,0 +1,36 @@
+<template name="calendrier">
+<table>
+  <thead>
+    <caption id="dispo">
+      Disponibilités
+    </caption>
+    <tr>
+      <th></th>
+      <th id="lun">Lundi</th>
+      <th id="mar">Mardi</th>
+      <th id="mer">Mercredi</th>
+      <th id="jeu">Jeudi</th>
+      <th id="ven">Vendredi</th>
+      <th id="sam">Samedi</th>
+      <th id="dim">Dimanche</th>
+    </tr>
+  </thead>
+
+  {{#each tranches}}
+    {{> tranche}}
+  {{/each}}
+
+</table>
+
+<table>
+    {{#each disponibilites}}
+    <tr>
+        <td>{{nom}}</td>
+        {{#each jours}}
+            <td>{{this}}</td>
+        {{/each}}
+    </tr>
+    {{/each}}
+    </table>
+
+</template>
