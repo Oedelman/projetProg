@@ -1,0 +1,11 @@
+<template name="tranche">
+  <tr>
+    <td>{{nom}}</td>
+
+	  {{#each nomsJours}}
+	    <td>
+	    	<input type="checkbox" data-jour="{{this}}" data-tranche="{{../nom}}">
+	    </td>
+	  {{/each}}
+  </tr>
+</template>
