@@ -8,6 +8,7 @@ import './login.js';
 import './userInfo.js';
 import  './Qparents.js';
 import './profil.html';
+import './suppressionCompte.js';
 
 //Permet la navigation sans changement de lien
 if(Meteor.isClient){
