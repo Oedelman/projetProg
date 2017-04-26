@@ -1,6 +1,47 @@
 <body>
   <div class="container">
-    
-    {{> calendrier}}
+    <header>
+      {{#if currentUser}}
+        <!--L'utlisateur doit être connecté pour voir ce qui suit-->
+        <h1>Profil de {{currentUser.username}}</h1>
+        {{> dashboard}}
+      {{else}}
+        <!--si non connecté-->
+        <h1>Bienvenue sur Byberoux!</h1>
+        {{> login}}
+      {{/if}}
+        <!--permanent sur la page-->
+    </header>
+      {{#if currentUser}}
+        <!--Naviguation de l'utilisateur-->
+        {{#if isPage 'home'}}
+          <button class="clickChangesPage" data-page='cal'>Calendrier</button>
+          <button class="clickChangesPage" data-page='profil'>Profil</button>
+        {{/if}}
+        {{#if isPage 'cal'}}
+          <button class="clickChangesPage" data-page='home'>Home</button>
+          <button class="clickChangesPage" data-page='profil'>Profil</button>
+          {{> calendrier}}
+        {{/if}}
+        {{#if isPage 'profil'}}
+          <button class="clickChangesPage" data-page='home'>Home</button>
+          <button class="clickChangesPage" data-page='cal'>Calendrier</button>
+          {{> profil}}
+        {{/if}}
+      {{else}}
+        {{#if isPage 'home'}}
+          Pourcommencer : A quelle catégorie appartenez-vous?
+          <button class="clickChangesPage" data-page='Qparents'>Parent</button>
+          <button class="clickChangesPage" data-page='Qbabysitter'>Babysitter</button>
+        {{/if}}
+        {{#if isPage 'Qparents'}}
+          {{> Qparents}}
+          <button class="clickChangesPage" data-page='home'>Retour</button>
+        {{/if}}
+        {{#if isPage 'Qbabysitter'}}
+          <button class="clickChangesPage" data-page='home'>Retour</button>
+          questionnaire babysitter
+        {{/if}}
+      {{/if}}
   </div>
 </body>
