@@ -49,12 +49,10 @@ $(".next").click(function(){
 			current_fs.hide();
 			animating = false;
 		}, 
-
 	});
 });
 }
 });
-
 
 //script pour retourner à la question précédente
 Template.Qparents.events({
@@ -93,15 +91,13 @@ Template.Qparents.events({
 			current_fs.hide();
 			animating = false;
 		}, 
-
 	});
 	});
-
 	}
 });
 
 Template.Qparents.events({
-    'submit form': function(event) {
+    'submit form': function(event, template) {
         event.preventDefault();
         Session.set('page', 'home');
         var usernameVar = event.target.nom.value+" "+event.target.prenom.value;
@@ -112,6 +108,23 @@ Template.Qparents.events({
         var codePostVar = event.target.codePostal.value;
         var numTelVar = event.target.phoneNumber.value;
         var addressVar = event.target.address.value;
+        var enfantVar = template.find('input:radio[name=enfants]:checked');
+
+        var cuisineVar = template.find('input:checkbox[name=cuisiner]:checked');
+        var conduireVar = template.find('input:checkbox[name=conduire]:checked');
+        var voitureVar = template.find('input:checkbox[name=voiture]:checked');
+        var premierSecVar = template.find('input:checkbox[name=premierSec]:checked');
+        var aideDevoirVar = template.find('input:checkbox[name=aideDevoir]:checked');
+        var activVar = template.find('input:checkbox[name=activ]:checked');
+
+        var frVar = template.find('input:checkbox[name=fr]:checked');
+        var engVar = template.find('input:checkbox[name=eng]:checked');
+        var itVar = template.find('input:checkbox[name=it]:checked');
+        var gerVar = template.find('input:checkbox[name=ger]:checked');
+        var spVar = template.find('input:checkbox[name=sp]:checked');
+        var porVar = template.find('input:checkbox[name=por]:checked');
+        var rusVar = template.find('input:checkbox[name=rus]:checked');
+
         Accounts.createUser({
             username: usernameVar,
             email: emailVar,
@@ -121,7 +134,23 @@ Template.Qparents.events({
             	last_name: nameVar,
             	postalCode: codePostVar,
             	phone: numTelVar,
-            	address: addressVar
+            	address: addressVar,
+            	enfants: $(enfantVar).val(),
+
+            	cuisine: $(cuisineVar).val(),
+            	conduire: $(conduireVar).val(),
+            	voiture: $(voitureVar).val(),
+            	premierSec: $(premierSecVar).val(),
+            	aideDevoir: $(aideDevoirVar).val(),
+            	activ: $(activVar).val(),
+
+            	francais: $(frVar).val(),
+            	anglais: $(engVar).val(),
+            	italien: $(itVar).val(),
+            	allemand: $(gerVar).val(),
+            	espagnol: $(spVar).val(),
+            	portugais: $(porVar).val(),
+            	russe: $(rusVar).val()
 			},
         });
     }
