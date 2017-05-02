@@ -51,6 +51,7 @@ Template.langues.helpers({
     let sp="";
     let por="";
     let rus="";
+
     if(Meteor.user().profile.francais=="on"){
       fr="Français/"
     }
@@ -72,6 +73,37 @@ Template.langues.helpers({
     if(Meteor.user().profile.russe=="on"){
       rus="Russe/"
     }
-    return "/"fr+eng+it+ger+sp+por+rus;
+    return "/"+fr+eng+it+ger+sp+por+rus;
+  }
+});
+
+Template.competences.helpers({
+  getSkills: function() {
+    let cui="";
+    let cond="";
+    let voit="";
+    let pSec="";
+    let aideDev="";
+    let activ="";
+
+    if(Meteor.user().profile.cuisine=="on"){
+      cui="Cuisine/"
+    }
+    if(Meteor.user().profile.conduire=="on"){
+      cond="Savoir conduire/"
+    }
+    if(Meteor.user().profile.voiture=="on"){
+      voit="Avoir une voiture/"
+    }
+    if(Meteor.user().profile.premierSec=="on"){
+      pSec="Connaître les premier secours/"
+    }
+    if(Meteor.user().profile.aideDevoir=="on"){
+      aideDev="Aide pour les devoirs/"
+    }
+    if(Meteor.user().profile.activ=="on"){
+      activ="Organiser des activités/"
+    }
+    return "/"+cui+cond+voit+pSec+aideDev+activ;
   }
 });
