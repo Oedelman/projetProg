@@ -1,5 +1,4 @@
 import  './Qparents.html';
-import  './Qparents.css';
 
 
 Template.Qparents.helpers({
