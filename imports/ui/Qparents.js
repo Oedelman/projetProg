@@ -1,5 +1,8 @@
 import  './Qparents.html';
 
+	var current_fs, next_fs, previous_fs; //fieldsets
+	var left, opacity, scale; //fieldset properties which we will animate
+	var animating; //flag to prevent quick multi-click glitches
 
 Template.Qparents.helpers({
 	emails: [
@@ -11,10 +14,6 @@ Template.Qparents.helpers({
 Template.Qparents.events({
 'click .next' (event) {
 	
-var current_fs, next_fs, previous_fs; //fieldsets
-var left, opacity, scale; //fieldset properties which we will animate
-var animating; //flag to prevent quick multi-click glitches
-
 $(".next").click(function(){
 	if(animating) return false;
 	animating = true;
@@ -56,9 +55,6 @@ $(".next").click(function(){
 //script pour retourner à la question précédente
 Template.Qparents.events({
 	'click .previous' (event) {
-		var current_fs, next_fs, previous_fs; //fieldsets
-		var left, opacity, scale; //fieldset properties which we will animate
-		var animating; //flag to prevent quick multi-click glitches
 
 		$(".previous").click(function(){
 	if(animating) return false;
