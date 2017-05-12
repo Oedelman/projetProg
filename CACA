@@ -1,0 +1,139 @@
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+  <style>
+  
+  #titre{
+  font-family: helvetica;
+  color: red;
+  text-align: center;
+  
+  
+}
+
+#num{
+  font-family: helvetica;
+  color: lightgreen;
+  margin-left: 50px;
+
+  
+}
+
+#num1{
+  font-family: helvetica;
+  margin-left: 50px;
+}
+#num2{
+  font-family: helvetica;
+ margin-left: 50px;
+}
+
+#num3{
+  font-family: helvetica;
+  margin-left: 50px;
+}
+#num4{
+  font-family: helvetica;
+  margin-left: 50px;
+}
+#num5{
+  font-family: helvetica;
+ margin-left: 50px;
+}
+#num6{
+  font-family: helvetica;
+  margin-left: 50px;
+}
+#num7{
+  font-family: helvetica;
+ margin-left: 50px;
+}
+#num8{
+  font-family: helvetica;
+  margin-left: 50px;
+}
+
+#gestes{
+  font-family: helvetica;
+  color: lightgreen;
+  margin-left: 50px;
+}
+#gestes1{
+  font-family: helvetica;
+  margin-left: 50px;
+}
+
+</style>
+</head>
+<body>
+
+
+<h2 id="titre">Informations d'urgence</h2>
+
+<p id="num">
+Numéros d'urgence
+  <li id="num1">
+    Police: 117 </li>
+  <li id="num2">
+  Pompiers: 118
+  </li>
+  <li id="num3">
+    Intoxication: 145
+  </li>
+  <li id="num4">
+    Urgence vitale, ambulance/SMUR: 144
+  </li>
+  <li id="num5">
+  Centrale téléphonique des urgences médecin/dentiste/pharmacie de garde (oriente vers la structure adaptée) : 0848 133 133</li>
+ <li id="num6">
+  Hôpital de l’enfance -16 ans : 021 314 84 84 </li>
+  <li id="num7">
+  Pharmacie de la Gare de Lausanne 7h/24h : 	021 324 20 20 </li>
+  <li id="num8">
+  Taxi Service : 0800 814 814</li>
+ 
+</p>
+
+<p id="gestes">
+  Gestes de bases à effectuer en cas de situation d'urgence</p>
+<p id="gestes1">
+  
+  1. Observer	
+  <br /><br />
+  - Evaluer la situation
+  <br />
+
+- Que s’est-il passé ?
+  <br />
+- Qui est impliqué ?
+  <br />
+- Qui est blessé ?
+  <br /><br />
+2. Réfléchir 
+  <br /><br />
+  - Eviter tout autre accident
+  <br />
+
+- Reconnaître le danger
+  <br />
+- Ecarter tout danger pour les sauveteurs et les autres personnes
+  <br />
+- Ecarter tout danger pour les victimes
+  <br /><br />
+3. Agir
+  <br /><br />
+  - Se protéger soi-même et protéger les autres
+<br />
+- Protection personnelle
+  <br />
+- Prodiguer les premiers secours
+  <br />
+- Alerter les secours
+
+</p>
+
+<a href="https://www.tcs.ch/fr/tests-conseils/premiers-secours">Lien vers la page des premiers secours TCS</a>
+	
+</body>
+
+<template name="caca"></template>

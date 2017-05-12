@@ -1,12 +1,20 @@
 <template name="profil">
+	<p>Type: {{> type}}</p>
 	<p>Nom: {{> nom}}</p>
 	<p>Prenom: {{> prenom}}</p>
 	<p>Email: {{> mail}}</p>
 	<p>Numéro de téléphone: {{> tel}}</p>
 	<p>Addresse: {{> address}}</p>
 	<p>Code Postal: {{> poste}}</p>
-	<p>Nombre d'enfants: {{> enfants}}</p>
-	<p>Langues: {{> langues}}</p>
+
+{{#if getType 'babysitter'}}
+	<p>Sitter Text: {{> sitterText}}</p>
 	<p>Compétences: {{> competences}}</p>
+	<p>Langues parlées: {{> langues}}</p>
+{{else }}
+	<p>Nombre d'enfants: {{> enfants}}</p>
+	<p>Compétences recherchées: {{> competences}}</p>
+	<p>Langues recherchées: {{> langues}}</p>
+{{/if }}
 	{{> suppressionCompte}}
 </template>

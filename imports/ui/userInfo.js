@@ -42,6 +42,20 @@ Template.enfants.helpers({
   }
 });
 
+
+Template.sitterText.helpers({
+  getSitterText: function() {
+    return Meteor.user().profile.sitter_text;
+  }
+});
+
+
+Template.type.helpers({
+  getType: function() {
+    return Meteor.user().profile.type;
+  }
+});
+
 Template.langues.helpers({
   getLangues: function() {
     let fr="";
