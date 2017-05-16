@@ -3,7 +3,6 @@ import { Template } from 'meteor/templating';
 import { ReactiveDict } from 'meteor/reactive-dict';
 import './body.html';
 import './disponibilites/calendrier.js';
-//import './register.js';
 import './login.js';
 import './userInfo.js';
 import './register/Qparents.js';

@@ -149,5 +149,4 @@ Template.Qbabysitter.events({
             	russe: $(rusVar).val()
 			},
         });
-    }
-});
+    }})

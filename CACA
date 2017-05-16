@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream:CACA
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
@@ -65,6 +66,8 @@
 
 </style>
 </head>
+=======
+>>>>>>> Stashed changes:pageSittr.html
 <body>
 
 
@@ -133,7 +136,75 @@ Numéros d'urgence
 </p>
 
 <a href="https://www.tcs.ch/fr/tests-conseils/premiers-secours">Lien vers la page des premiers secours TCS</a>
+<<<<<<< Updated upstream:CACA
 	
 </body>
 
 <template name="caca"></template>
+=======
+<style>
+	
+	#titre{
+  font-family: helvetica;
+  color: red;
+  text-align: center;
+  
+  
+}
+
+#num{
+  font-family: helvetica;
+  color: lightgreen;
+  margin-left: 50px;
+
+  
+}
+
+#num1{
+  font-family: helvetica;
+  margin-left: 50px;
+}
+#num2{
+  font-family: helvetica;
+ margin-left: 50px;
+}
+
+#num3{
+  font-family: helvetica;
+  margin-left: 50px;
+}
+#num4{
+  font-family: helvetica;
+  margin-left: 50px;
+}
+#num5{
+  font-family: helvetica;
+ margin-left: 50px;
+}
+#num6{
+  font-family: helvetica;
+  margin-left: 50px;
+}
+#num7{
+  font-family: helvetica;
+ margin-left: 50px;
+}
+#num8{
+  font-family: helvetica;
+  margin-left: 50px;
+}
+
+#gestes{
+  font-family: helvetica;
+  color: lightgreen;
+  margin-left: 50px;
+}
+#gestes1{
+  font-family: helvetica;
+  margin-left: 50px;
+}
+
+</style>
+	
+</body>
+>>>>>>> Stashed changes:pageSittr.html
