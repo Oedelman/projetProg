@@ -1,10 +1,12 @@
 import  './Qparents.html';
+//vars pour l'animation
+var current_fs, next_fs, previous_fs; //fieldsets
+var left, opacity, scale; //fieldset properties which we will animate
+var animating; //flag to prevent quick multi-click glitches
 
 Template.Qparents.events({
 	'click .next' (event) { //script pour passer à la prochaine question
-		var current_fs, next_fs, previous_fs; //fieldsets
-		var left, opacity, scale; //fieldset properties which we will animate
-		var animating; //flag to prevent quick multi-click glitches
+	
 		$(".next").click(function(){
 			if(animating) return false;
 			animating = true;
@@ -42,9 +44,7 @@ Template.Qparents.events({
 		});
 	},
 	'click .previous' (event) { //script pour retourner à la question précédente
-		var current_fs, next_fs, previous_fs; //fieldsets
-		var left, opacity, scale; //fieldset properties which we will animate
-		var animating; //flag to prevent quick multi-click glitches
+
 		$(".previous").click(function(){
 			if(animating) return false;
 			animating = true;
