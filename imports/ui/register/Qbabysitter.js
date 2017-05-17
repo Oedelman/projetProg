@@ -1,11 +1,5 @@
 import  './Qbabysitter.html';
 
-Template.Qbabysitter.helpers({
-	emails: [
-		{},
-	],
-});
-
 //script pour passer a la prochaine question
 Template.Qbabysitter.events({
 
