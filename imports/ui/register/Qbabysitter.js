@@ -1,12 +1,14 @@
 import  './Qbabysitter.html';
 
+var current_fs, next_fs, previous_fs; //fieldsets
+var left, opacity, scale; //fieldset properties which we will animate
+var animating; //flag to prevent quick multi-click glitches
+
 //script pour passer a la prochaine question
 Template.Qbabysitter.events({
 
 'click .next' (event) {
-var current_fs, next_fs, previous_fs; //fieldsets
-var left, opacity, scale; //fieldset properties which we will animate
-var animating; //flag to prevent quick multi-click glitches
+
 
 $(".next").click(function(){
 	if(animating) return false;
@@ -45,9 +47,7 @@ $(".next").click(function(){
 });
 },
 	'click .previous' (event) {
-	var current_fs, next_fs, previous_fs; //fieldsets
-	var left, opacity, scale; //fieldset properties which we will animate
-	var animating; //flag to prevent quick multi-click glitches
+	
 		$(".previous").click(function(){
 	if(animating) return false;
 	animating = true;
