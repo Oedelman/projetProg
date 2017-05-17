@@ -1,11 +1,5 @@
 import  './Qparents.html';
 
-Template.Qparents.helpers({
-	emails: [
-		{},
-	],
-});
-
 Template.Qparents.events({
 	'click .next' (event) { //script pour passer à la prochaine question
 		var current_fs, next_fs, previous_fs; //fieldsets
