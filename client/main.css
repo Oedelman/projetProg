@@ -124,11 +124,7 @@ header .hide-completed {
   }
 }
 
-html {
 /*CODE FROM QPARENTS */
-  background: linear-gradient(-125deg,#9dd53a 0%, #7cbc0a 0%, #7cbc0a 100%, #a1d54f 100%, #a1d54f 100%, #80c217 100%, #80c217 100%, #80c217 100%, #7cbc0a 101%);
-
-}
 /*form styles*/
 #msform {
 	width: 28%;
