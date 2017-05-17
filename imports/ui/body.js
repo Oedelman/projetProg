@@ -10,6 +10,7 @@ import './register/Qbabysitter.js';
 import './match/match.js';
 import './profil.js';
 import './suppressionCompte.js';
+import './infoBabysitter.html';
 
 //Permet la navigation sans changement de lien
 if(Meteor.isClient){
