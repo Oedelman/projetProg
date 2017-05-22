@@ -22,14 +22,12 @@ button {
 .container {
   max-width: 600px;
   margin: 0 auto;
-  border-radius: 15px;
   min-height: 100%;
   background: white;
 }
  
 header {
   background: -webkit-radial-gradient(20% 80%, 60% 60%, rgba(207,240,158,.75), rgba(207,240,158,1));
-  border-radius: 15px;
   padding: 20px 15px 15px 15px;
   position: relative;
 }
