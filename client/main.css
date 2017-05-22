@@ -1,9 +1,9 @@
 body {
-  font-family: sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   background-color: #315481;
-  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+  background-image: -webkit-radial-gradient(20% 80%, 60% 60%, rgba(11,72,107,.75), rgba(11,72,107,1));
   background-attachment: fixed;
- 
+
   position: absolute;
   top: 0;
   bottom: 0;
@@ -12,8 +12,11 @@ body {
 
   padding: 0;
   margin: 0;
- 
-  font-size: 14px;
+
+  font-size: 16px;
+}
+button {
+	font-family: "Alegreya Sans", sans-serif;
 }
  
 .container {
