@@ -28,14 +28,15 @@ button {
 }
  
 header {
-  background: #d2edf4;
-  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+  background: -webkit-radial-gradient(20% 80%, 60% 60%, rgba(207,240,158,.75), rgba(207,240,158,1));
+  border-radius: 15px;
   padding: 20px 15px 15px 15px;
   position: relative;
 }
- 
+
 #login-buttons {
   display: block;
+  font-family: "Alegreya Sans", sans-serif;
 }
  
 h1 {
