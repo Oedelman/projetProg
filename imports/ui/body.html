@@ -11,10 +11,7 @@
       {{/if}}
         <!--permanent sur la page-->
     </header>
-	<div class="subcontainer">
-	<b>Connexion:</b> <br><br>
-	{{> login}}
-	<br>
+	   <div class="subcontainer">
       {{#if currentUser}}
         <!--Naviguation de l'utilisateur-->
         {{#if isPage 'home'}}
@@ -56,7 +53,10 @@
         {{/if}}
       {{else}}
         {{#if isPage 'home'}}
-		<b>Création de compte:</b> <br><br>
+          <b>Connexion:</b> <br><br>
+          {{> login}}
+          <br>
+		      <b>Création de compte:</b> <br><br>
           Êtes-vous: <br>
           <button class="clickChangesPage" data-page='Qparents'>Parent</button>
           <button class="clickChangesPage" data-page='Qbabysitter'>Babysitter</button>
