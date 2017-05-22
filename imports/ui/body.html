@@ -7,11 +7,12 @@
         {{> dashboard}}
       {{else}}
         <!--si non connecté-->
-        <h1>Bienvenue sur SittR!</h1>
-        {{> login}}
+        <h1>SittR</h1>
       {{/if}}
         <!--permanent sur la page-->
     </header>
+	<div class="subcontainer">
+	{{> login}}
       {{#if currentUser}}
         <!--Naviguation de l'utilisateur-->
         {{#if isPage 'home'}}
@@ -20,7 +21,7 @@
           {{#if profileType 'parents'}}
             <button class="clickChangesPage" data-page="match">Match</button>
           {{/if}}
-          <!--{{#if isBabysitter type}}-->
+          {{#if profileType 'babysitter'}}
             <button class="clickChangesPage" data-page="infoBaby">Aide</button>
           {{/if}}
         {{/if}}
@@ -51,6 +52,7 @@
           <button class="clickChangesPage" data-page='profil'>Profil</button>
           {{> match}}
         {{/if}}
+      {{else}}
         {{#if isPage 'home'}}
           Êtes-vous: <br>
           <button class="clickChangesPage" data-page='Qparents'>Parent</button>
@@ -64,5 +66,7 @@
           {{> Qbabysitter}}
           <button class="clickChangesPage" data-page='home'>Retour</button>
         {{/if}}
+      {{/if}}
+	  </div>
   </div>
 </body>
