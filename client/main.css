@@ -1,42 +1,76 @@
 body {
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Option Sans", sans-serif;
+  font-weight: lighter;
   background-color: #315481;
   background-image: -webkit-radial-gradient(20% 80%, 60% 60%, rgba(11,72,107,.75), rgba(11,72,107,1));
   background-attachment: fixed;
-
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-
+  text-align: center;
   padding: 0;
   margin: 0;
 
-  font-size: 16px;
+  font-size: 4vh;
 }
-button {
-	font-family: "Alegreya Sans", sans-serif;
+button{
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+	background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:12px 48px;
+	margin-top: 3vh;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
 }
- 
 .container {
   max-width: 600px;
   margin: 0 auto;
   min-height: 100%;
   background: white;
 }
- 
+
 header {
-  background: -webkit-radial-gradient(20% 80%, 60% 60%, rgba(207,240,158,.75), rgba(207,240,158,1));
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #cff09e), color-stop(1, #a8dba8));
+	background:-moz-linear-gradient(top, #cff09e 5%, #a8dba8 100%);
+	background:-webkit-linear-gradient(top, #cff09e 5%, #a8dba8 100%);
+	background:-o-linear-gradient(top, #cff09e 5%, #a8dba8 100%);
+	background:-ms-linear-gradient(top, #cff09e 5%, #a8dba8 100%);
+	background:linear-gradient(to bottom, #cff09e 5%, #a8dba8 100%);
   padding: 20px 15px 15px 15px;
+  font-family: "Option Sans", sans-serif;
+  font-weight: lighter;
   position: relative;
 }
-
+.subcontainer {
+	padding: 25px;
+	margin: auto;
+}
 #login-buttons {
   display: block;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Option Sans", sans-serif;
 }
- 
+
 h1 {
   font-size: 1.5em;
   margin: 0;
@@ -44,13 +78,7 @@ h1 {
   display: inline-block;
   margin-right: 1em;
 }
- 
-form {
-  margin-top: 10px;
-  margin-bottom: -10px;
-  position: relative;
-}
- 
+
 .new-task input {
   box-sizing: border-box;
   padding: 10px 0;
@@ -60,17 +88,17 @@ form {
   padding-right: 80px;
   font-size: 1em;
 }
- 
+
 .new-task input:focus{
   outline: 0;
 }
- 
+
 ul {
   margin: 0;
   padding: 0;
   background: white;
 }
- 
+
 .delete {
   float: right;
   font-weight: bold;
@@ -79,49 +107,49 @@ ul {
   border: none;
   position: relative;
 }
- 
+
 li {
   position: relative;
   list-style: none;
   padding: 15px;
   border-bottom: #eee solid 1px;
 }
- 
+
 li .text {
   margin-left: 10px;
 }
- 
+
 li.checked {
   color: #888;
 }
- 
+
 li.checked .text {
   text-decoration: line-through;
 }
- 
+
 li.private {
   background: #eee;
   border-color: #ddd;
 }
- 
+
 header .hide-completed {
   float: right;
 }
- 
+
 .toggle-private {
   margin-left: 5px;
 }
- 
+
 @media (max-width: 600px) {
   li {
     padding: 12px 15px;
   }
- 
+
   .search {
     width: 150px;
     clear: both;
   }
- 
+
   .new-task input {
     padding-bottom: 5px;
   }
@@ -149,42 +177,23 @@ header .hide-completed {
 #msform fieldset:not(:first-of-type) {
         display: none;
 }
+
 /*inputs*/
 .chckbx {
   margin: auto;
- 
+
 }
 #msform input,  #msform textarea {
-	padding: 15px;
-	border: 1px solid #ccc;
-	border-radius: 30px;
-	margin-bottom: 10px;
-	width: 100%;
-	box-sizing: border-box;
-	color: black;
-	font-size: 13px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 30px;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        color: black;
+        font-size: 13px;
 }
 
-/*buttons*/
-#msform .action-button {
-	width: 150px;
-	background: linear-gradient(-125deg,#9dd53a 0%, #7cbc0a 0%, #7cbc0a 100%, #a1d54f 100%, #a1d54f 100%, #80c217 100%, #80c217 100%, #80c217 100%, #7cbc0a 101%);
-	font-weight: bold;
-	color: white;
-	border: 0 none;
-	border-radius: 15px;
-	cursor: pointer;
-	padding: 10px 5px;
-	margin: 10px 5px;
-}
-#msform .action-button:hover, #msform .action-button:focus {
-	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
-}
-.fs-title {
-	font-size: 15px;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-}
 /*buttons*/
 #msform .action-button {
         width: 150px;
