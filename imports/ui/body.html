@@ -7,7 +7,7 @@
         {{> dashboard}}
       {{else}}
         <!--si non connecté-->
-        <h1>Bienvenue sur Byberoux!</h1>
+        <h1>Bienvenue sur SittR!</h1>
         {{> login}}
       {{/if}}
         <!--permanent sur la page-->
@@ -20,7 +20,7 @@
           {{#if profileType 'parents'}}
             <button class="clickChangesPage" data-page="match">Match</button>
           {{/if}}
-          {{#if profileType 'babysitter'}}
+          <!--{{#if isBabysitter type}}-->
             <button class="clickChangesPage" data-page="infoBaby">Aide</button>
           {{/if}}
         {{/if}}
@@ -51,7 +51,6 @@
           <button class="clickChangesPage" data-page='profil'>Profil</button>
           {{> match}}
         {{/if}}
-      {{else}}
         {{#if isPage 'home'}}
           Pour commencer : A quelle catégorie appartenez-vous?
           <button class="clickChangesPage" data-page='Qparents'>Parent</button>
@@ -65,6 +64,5 @@
           {{> Qbabysitter}}
           <button class="clickChangesPage" data-page='home'>Retour</button>
         {{/if}}
-      {{/if}}
   </div>
 </body>

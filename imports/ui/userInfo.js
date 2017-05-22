@@ -55,13 +55,13 @@ Template.type.helpers({
     return Meteor.user().profile.type;
   }
 });
-
+/*
 Template.parentText.helpers({
   getParentText: function() {
     return Meteor.user().profile.parent_text;
   }
 });
-
+*/
 Template.langues.helpers({
   getLangues: function() {
     let fr="";

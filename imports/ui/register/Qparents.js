@@ -109,7 +109,7 @@ Template.Qparents.events({
         var porVar = template.find('input:checkbox[name=por]:checked');
         var rusVar = template.find('input:checkbox[name=rus]:checked');
 	    
-	var parenttextVar = event.target.parenttext.value;
+		var parenttextVar = event.target.parenttext.value;
 
         Accounts.createUser({
             username: usernameVar,
@@ -123,7 +123,7 @@ Template.Qparents.events({
             	address: addressVar,
             	enfants: $(enfantVar).val(),
             	type: 'parents',
-		parent_text: parenttextVar,
+				parent_text: parenttextVar,
 
             	cuisine: $(cuisineVar).val(),
             	conduire: $(conduireVar).val(),
