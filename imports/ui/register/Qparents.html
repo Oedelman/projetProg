@@ -13,63 +13,76 @@
   <!-- fieldsets -->
   <fieldset>
     <h2 class="fs-title">Creation du compte</h2>
-    <input type="email" id="email" placeholder="Email"/>
-    <input type="password" id="pass" placeholder="Mot de passe"/>
-    <input type="password" id="confirmpass" placeholder="Confirmer Mot de passe"/>
+    <input type="email" id="email" placeholder="Email" class="textzone"/>
+    <input type="password" id="pass" placeholder="Mot de passe" class="textzone"/>
+    <input type="password" id="confirmpass" placeholder="Confirmer Mot de passe" class="textzone"/>
     <input type="button" name="next" id="next1" class="next action-button" value="Prochaine question"/>
   </fieldset>
   <fieldset>
     <h2 class="fs-title">Informations personnelles</h2>
-    <input type="text" name="nom" placeholder="Nom"/>
-    <input type="text" name="prenom" placeholder="Prenom"/>
-    <input type="text" name="codePostal" placeholder="Code Postal"/>
-    <input type="text" name="phoneNumber" placeholder="Numero de téléphone"/>
-    <textarea name="address" placeholder="Addresse"></textarea>
-	<input type="button" name="next" class="next action-button" value="Prochaine question"/>
+    <input type="text" name="nom" placeholder="Nom" class="textzone"/>
+    <input type="text" name="prenom" placeholder="Prenom" class="textzone"/>
+    <input type="text" name="codePostal" placeholder="Code Postal" class="textzone"/>
+    <input type="text" name="phoneNumber" placeholder="Numero de téléphone" class="textzone"/>
+    <textarea name="address" placeholder="Addresse" class="textzone"></textarea>
+	  <input type="button" name="next" class="next action-button" value="Prochaine question"/>
     <input type="button" name="previous" class="previous action-button" value="Revenir en arrière"/>
   </fieldset>
   <fieldset>
     <h2 class="fs-title">Combien avez-vous d'enfants?</h2>
-    <div class="newstuff">
-    <input type="radio" name="enfants" value="1" class="chckbx"/> <span>1</span> <br />
-    <input type="radio" name="enfants" value="2" class="chckbx"/> <span>2</span><br />
-    <input type="radio" name="enfants" value="3" class="chckbx"/> <span>3</span><br />
-    <input type="radio" name="enfants" value="4+" class="chckbx"/> <span>4+</span><br />
-  </div>
+    <input type="radio" id="radio-1" name="enfants" value="1" class="chckbx"/>
+    <label for="radio-1">1</label><br/>
+    <input type="radio" id="radio-2" name="enfants" value="2" class="chckbx"/>
+    <label for="radio-2">2</label><br/>
+    <input type="radio" id="radio-3" name="enfants" value="3" class="chckbx"/>
+    <label for="radio-3">3</label><br/>
+    <input type="radio" id="radio-4" name="enfants" value="4+" class="chckbx"/>
+    <label for="radio-4">4+</label><br/>
 	  <input type="button" name="next" class="next action-button" value="Prochaine question" />
     <input type="button" name="previous" class="previous action-button" value="Revenir en arrière" />
-       
   </fieldset>
   <fieldset>
     <h2 class="fs-title">Qu'est-ce que votre futur babysitter doit savoir faire?</h2>
-     <input type="checkbox" name="cuisiner" class="chckbx"/> <span>Savoir faire à manger</span><br />
-     <input type="checkbox" name="conduire" class="chckbx"/> <span>Avoir permis de conduire</span><br />
-     <input type="checkbox" name="voiture" class="chckbx"/> <span>Avoir une voiture</span><br />
-     <input type="checkbox" name="premierSec" class="chckbx"/> <span>Connaître les gestes de premiers secours</span><br />
-     <input type="checkbox" name="aideDevoir" class="chckbx"/> <span>Aider avec les devoirs</span><br />
-     <input type="checkbox" name="activ" class="chckbx"/> <span>Organiser les activiés/jeux avec les enfants</span><br />
-      <input type="button" name="next" class="next action-button" value="Prochaine question" />
-      <input type="button" name="previous" class="previous action-button" value="Revenir en arrière" />
+    <input type="checkbox" id="check-1" name="cuisiner" class="chckbx"/>
+    <label for="check-1">Savoir faire à manger</label><br/>
+    <input type="checkbox" id="check-2" name="conduire" class="chckbx"/>
+    <label for="check-2">Avoir permis de conduire</label><br/>
+    <input type="checkbox" id="check-3" name="voiture" class="chckbx"/>
+    <label for="check-3">Avoir une voiture</label><br/>
+    <input type="checkbox" id="check-4" name="premierSec" class="chckbx"/>
+    <label for="check-4">Connaître les gestes de premiers secours</label><br/>
+    <input type="checkbox" id="check-5" name="aideDevoir" class="chckbx"/>
+    <label for="check-5">Aider avec les devoirs</label><br/>
+    <input type="checkbox" id="check-6" name="activ" class="chckbx"/>
+    <label for="check-6">Organiser les activiés/jeux avec les enfants</label><br/>
+    <input type="button" name="next" class="next action-button" value="Prochaine question" />
+    <input type="button" name="previous" class="previous action-button" value="Revenir en arrière" />
   </fieldset>
   <fieldset>
     <h2 class="fs-title">Quelles sont les langues que votre futur babysitter doit parler?</h2>
-     <input type="checkbox" name="fr" class="chckbx" /> <span>Français</span><br />
-     <input type="checkbox" name="eng" class="chckbx"/> <span>Anglais</span><br />
-     <input type="checkbox" name="it" class="chckbx"/> <span>Italien</span><br />
-     <input type="checkbox" name="ger" class="chckbx"/> <span>Allemand</span><br />
-     <input type="checkbox" name="sp" class="chckbx"/> <span>Espagnol</span><br />
-     <input type="checkbox" name="por" class="chckbx"/> <span>Portugais</span><br />
-     <input type="checkbox" name="rus" class="chckbx"/> <span>Russe</span>
+    <input type="checkbox" id="check-7"  name="fr" class="chckbx" />
+    <label for="check-7">Français</label><br/>
+    <input type="checkbox" id="check-8" name="eng" class="chckbx"/>
+    <label for="check-8">Anglais</label><br/>
+    <input type="checkbox" id="check-9" name="it" class="chckbx"/>
+    <label for="check-9">Italien</label><br/>
+    <input type="checkbox" id="check-10" name="ger" class="chckbx"/>
+    <label for="check-10">Allemand</label><br/>
+    <input type="checkbox" id="check-11" name="sp" class="chckbx"/>
+    <label for="check-11">Espagnol</label><br/>
+    <input type="checkbox" id="check-12" name="por" class="chckbx"/>
+    <label for="check-12">Portugais</label><br/>
+    <input type="checkbox" id="check-13" name="rus" class="chckbx"/>
+    <label for="check-13">Russe</label><br/>
     <br />
-<input type="button" name="next" class="next action-button" value="Passer à l'étape suivante" />
+    <input type="button" name="next" class="next action-button" value="Passer à l'étape suivante" />
     <input type="button" name="previous" class="previous action-button" value="Revenir en arrière" />
   </fieldset>
   <fieldset>
   	<h2 class="fs-title">Ecrivez quelques mots pour décrire vos enfants</h2>
-  	<textarea name="parenttext"></textarea>
-  	 <input type="submit" name="submit" class="submit action-button" value="Terminer" />
+  	<textarea name="parenttext" class="textzone"></textarea>
+  	<input type="submit" name="submit" class="submit action-button" value="Terminer" />
 	  <input type="button" name="previous" class="previous action-button" value="Revenir en arrière" />
   </fieldset>
 </form>
 </template>
-
