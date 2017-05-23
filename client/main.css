@@ -308,3 +308,17 @@ color: black;
 }
 
 /*END OF QPARENTS*/
+td{
+text-align: left;
+
+}
+input.checkbox{
+	margin-left: -3vh;
+	margin-right: 3vh;
+
+}
+th{
+	position: relative;
+	left: -5vh;
+	padding-right: 2vh;
+}
