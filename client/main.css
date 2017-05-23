@@ -34,7 +34,6 @@ button{
 	display:inline-block;
 	cursor:pointer;
 	color:#666666;
-	font-family:Arial;
 	font-size:20px;
 	font-weight:bold;
 	padding:12px 48px;
@@ -81,7 +80,6 @@ header {
 	display:inline-block;
 	cursor:pointer;
 	color:#666666;
-	font-family:Arial;
 	font-weight:bold;
 	font-size: 3vh;
 	padding: 6px;
@@ -107,7 +105,30 @@ header {
 	display:inline-block;
 	cursor:pointer;
 	color:#666666;
-	font-family:Arial;
+	font-weight:bold;
+	font-size: 3vh;
+	padding:6px 6px;
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+	background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
 	font-weight:bold;
 	font-size: 3vh;
 	padding:6px 6px;
@@ -208,11 +229,29 @@ header .hide-completed {
         position: relative;
 }
 #msform fieldset {
-        background: white;
-        border: 0 none;
-        border-radius: 30px;
-        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-        box-sizing: border-box;
+        -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+	background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	cursor:pointer;
+	color:#666666;
+	font-size: 3vh;
+	padding:12px;
+	margin-top: 3vh;
+	margin-bottom: 1vh;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
         width: 50%;
         margin-left: 25%;
         /*stacking fieldsets above each other*/
@@ -226,17 +265,24 @@ header .hide-completed {
 /*inputs*/
 .chckbx {
   margin: auto;
+  
 
 }
-#msform input,  #msform textarea {
-        padding: 15px;
-        border: 1px solid #ccc;
-        border-radius: 30px;
-        margin-bottom: 10px;
-        width: 100%;
-        box-sizing: border-box;
-        color: black;
-        font-size: 13px;
+#msform input,  #msform textarea {-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+		background-color:#ffffff;
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	margin-top: 3vh;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: black;
+    font-size: 13px;
 }
 
 /*buttons*/
@@ -246,7 +292,7 @@ header .hide-completed {
         font-weight: bold;
         color: white;
         border: 0 none;
-        border-radius: 15px;
+        border-radius: 6px;
         cursor: pointer;
         padding: 10px 5px;
         margin: 10px 5px;
@@ -306,8 +352,7 @@ header .hide-completed {
         background: orange;
 color: black;
 }
-
-/*END OF QPARENTS*/
+/* end of qparents */
 td{
 text-align: left;
 
