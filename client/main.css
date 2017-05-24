@@ -336,8 +336,13 @@ header .hide-completed {
 }
   /*marking active/completed steps orange*/
 #progressbar li.active:before,  #progressbar li.active:after{
-        background: orange;
-color: black;
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #cff09e), color-stop(1, #a8dba8));
+	background:-moz-linear-gradient(top, #cff09e 5%, #a8dba8 100%);
+	background:-webkit-linear-gradient(top, #cff09e 5%, #a8dba8 100%);
+	background:-o-linear-gradient(top, #cff09e 5%, #a8dba8 100%);
+	background:-ms-linear-gradient(top, #cff09e 5%, #a8dba8 100%);
+	background:linear-gradient(to bottom, #cff09e 5%, #a8dba8 100%);
+	color: black;
 }
 /* end of qparents */
 td{
