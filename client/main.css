@@ -275,9 +275,14 @@ header .hide-completed {
 /*buttons*/
 #msform .action-button {
         width: 150px;
-        background: linear-gradient(-125deg,#9dd53a 0%, #7cbc0a 0%, #7cbc0a 100%, #a1d54f 100%, #a1d54f 100%, #80c217 100%, #80c217 100%, #80c217 100%, #7cbc0a 101%);
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #cff09e), color-stop(1, #a8dba8));
+	background:-moz-linear-gradient(top, #cff09e 5%, #a8dba8 100%);
+	background:-webkit-linear-gradient(top, #cff09e 5%, #a8dba8 100%);
+	background:-o-linear-gradient(top, #cff09e 5%, #a8dba8 100%);
+	background:-ms-linear-gradient(top, #cff09e 5%, #a8dba8 100%);
+	background:linear-gradient(to bottom, #cff09e 5%, #a8dba8 100%);
         font-weight: bold;
-        color: white;
+        color: black;
         border: 0 none;
         border-radius: 6px;
         cursor: pointer;
