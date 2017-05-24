@@ -2,9 +2,10 @@
   <tr>
     <td>{{nom}}</td>
 
-	  {{#each nomsJours}}
+	  {{#each tranches}}
 	    <td>
-	    	<input type="checkbox" data-jour="{{this}}" data-tranche="{{../nom}}">
+	    	<input type="checkbox" class="checkbox" data-jour="{{this}}" data-tranche="{{../nom}}">
+			
 	    </td>
 	  {{/each}}
   </tr>
