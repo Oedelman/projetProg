@@ -1,22 +1,20 @@
 <template name="calendrier">
 <table>
   <thead>
+  <br>
     <caption id="dispo">
-      Disponibilités
+      <b>Disponibilités</b>
     </caption>
     <tr>
       <th></th>
-      <th id="lun">Lundi</th>
-      <th id="mar">Mardi</th>
-      <th id="mer">Mercredi</th>
-      <th id="jeu">Jeudi</th>
-      <th id="ven">Vendredi</th>
-      <th id="sam">Samedi</th>
-      <th id="dim">Dimanche</th>
+      <th id="tranche1">8h-12h</th>
+      <th id="tranche2">12h-16h</th>
+      <th id="tranche3">16h-20h</th>
+      <th id="tranche4">20h-00h</th>
     </tr>
   </thead>
 
-  {{#each tranches}}
+  {{#each nomsJours}}
     {{> tranche}}
   {{/each}}
 
