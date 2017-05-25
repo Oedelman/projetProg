@@ -7,7 +7,7 @@ Meteor.startup(() => {
 });
 
 if(Meteor.isServer) {
-	Meteor.publish("babysitters", function() {
-		return Meteor.users.find({"profile.type": "babysitter", "profile.codePostal": this.user().profile.codePostal});
+	Meteor.publish("matches", function() {
+		return Meteor.users.find();
 	});
 }

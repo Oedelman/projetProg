@@ -18,7 +18,7 @@
           <button class="clickChangesPage" data-page='cal'>Calendrier</button>
           <button class="clickChangesPage" data-page='profil'>Profil</button>
           {{#if profileType 'parents'}}
-            <button class="clickChangesPage" data-page="match">Match</button>
+            <button class="clickChangesPage" data-page="matches">Match</button>
           {{/if}}
           {{#if profileType 'babysitter'}}
             <button class="clickChangesPage" data-page="infoBaby">Aide</button>
@@ -28,7 +28,7 @@
           <button class="clickChangesPage" data-page='home'>Home</button>
           <button class="clickChangesPage" data-page='profil'>Profil</button>
           {{#if profileType 'parents'}}
-            <button class="clickChangesPage" data-page="match">Match</button>
+            <button class="clickChangesPage" data-page="matches">Match</button>
           {{/if}}
           {{> calendrier}}
         {{/if}}
@@ -41,15 +41,15 @@
           <button class="clickChangesPage" data-page='home'>Home</button>
           <button class="clickChangesPage" data-page='cal'>Calendrier</button>
           {{#if profileType 'parents'}}
-            <button class="clickChangesPage" data-page="match">Match</button>
+            <button class="clickChangesPage" data-page="matches">Match</button>
           {{/if}}
           {{> profil}}
         {{/if}}
-        {{#if isPage 'match'}}
+        {{#if isPage 'matches'}}
           <button class="clickChangesPage" data-page='home'>Home</button>
           <button class="clickChangesPage" data-page='cal'>Calendrier</button>
           <button class="clickChangesPage" data-page='profil'>Profil</button>
-          {{> match}}
+          {{> matches}}
         {{/if}}
       {{else}}
         {{#if isPage 'home'}}

@@ -7,14 +7,14 @@ import './login.js';
 import './userInfo.js';
 import './register/Qparents.js';
 import './register/Qbabysitter.js';
-import './match/match.js';
+import './matches/matches.js';
 import './profil.js';
 import './suppressionCompte.js';
 import './infoBabysitter.html';
 
+
 //Permet la navigation sans changement de lien
 if(Meteor.isClient){
-    Meteor.subscribe('babysitters');
     
     Session.setDefault('page', 'home');
 
