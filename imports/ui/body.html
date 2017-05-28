@@ -15,7 +15,7 @@
       {{#if currentUser}}
         <!--Naviguation de l'utilisateur-->
         {{#if isPage 'home'}}
-          <button class="clickChangesPage" data-page='cal'>Calendrier</button>
+          <!--<button class="clickChangesPage" data-page='cal'>Calendrier</button>-->
           <button class="clickChangesPage" data-page='profil'>Profil</button>
           {{#if profileType 'parents'}}
             <button class="clickChangesPage" data-page="matches">Match</button>
@@ -34,12 +34,12 @@
         {{/if}}
         {{#if isPage 'infoBaby'}}
           <button class="clickChangesPage" data-page='home'>Home</button>
-          <button class="clickChangesPage" data-page='cal'>Calendrier</button>
+          <!--<button class="clickChangesPage" data-page='cal'>Calendrier</button>-->
           {{> infoBaby}}
         {{/if}}
         {{#if isPage 'profil'}}
           <button class="clickChangesPage" data-page='home'>Home</button>
-          <button class="clickChangesPage" data-page='cal'>Calendrier</button>
+          <!--<button class="clickChangesPage" data-page='cal'>Calendrier</button>-->
           {{#if profileType 'parents'}}
             <button class="clickChangesPage" data-page="matches">Match</button>
           {{/if}}
@@ -47,7 +47,7 @@
         {{/if}}
         {{#if isPage 'matches'}}
           <button class="clickChangesPage" data-page='home'>Home</button>
-          <button class="clickChangesPage" data-page='cal'>Calendrier</button>
+          <!--<button class="clickChangesPage" data-page='cal'>Calendrier</button>-->
           <button class="clickChangesPage" data-page='profil'>Profil</button>
           {{> matches}}
         {{/if}}
